@@ -20,7 +20,7 @@
     content-type = application/json
     
    - endpoints :
-        - Song 
+        - Song URL: `http://0.0.0.0:8080/content/song/add`
                 
             request body
                 
@@ -38,7 +38,7 @@
                     "upload_time": "2021-05-03T11:34:28.695212Z"
                }
 
-        - Podcast
+        - Podcast URL: `http://0.0.0.0:8080/content/podcast/add`
             
             request body
             
@@ -60,7 +60,7 @@
                     "participants": "The Mountain Goats, John Carpenter"
                 }
                        
-        - Audiobook
+        - Audiobook URL: `http://0.0.0.0:8080/content/audiobook/add`
         
             request body
             
