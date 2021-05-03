@@ -1,0 +1,230 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Audio Library",
+		"_postman_id": "f3ddbab4-2598-c297-c052-a139fffd5bb6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adding song",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/song/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jana Gana Mana\",\n\t\"duration\": 52\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Podcast",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/podcast/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Song Exploder\",\n\t\"host\": \"Hrishikesh Hirway\",\n\t\"participants\": \"The Mountain Goats, John Carpenter\",\n\t\"duration\": 5000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Audiobook",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/audiobook/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Jana Gana Mana\",\n\t\"author\": \"Rabindranath Thakur\",\n\t\"narrator\": \"Rabindranath Thakur\",\n\t\"duration\": 52\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get second song details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/song/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all song details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/song",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all podcast details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/podcast",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all audiobook details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/audiobook",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get first podcast details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/podcast/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get first audiobook details",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/audiobook/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Updating first podcast",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/podcast/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Song Exploder\",\n    \"duration\": 2500,\n    \"host\": \"Hrishikesh Hirway\",\n    \"participants\": \"The Mountain Goats, John Carpenter, Akilesh Ramalingam\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Updating first song",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/song/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jana Gana Mana\",\n    \"duration\": 55\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Updating first audiobook",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/audiobook/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Jana Gana Mana\",\n    \"author\": \"Rabindranath Thakur\",\n    \"narrator\": \"Rabindranath\",\n    \"duration\": 55\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting song",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/song/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting podcast",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/podcast/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting audiobook",
+			"request": {
+				"url": "http://0.0.0.0:8080/content/audiobook/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
