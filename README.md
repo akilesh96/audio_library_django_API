@@ -12,29 +12,7 @@
 5. Load `Postman_Collections/Audio Library.postman_collection_v1.json` into POSTMAN application
 <br>
 <br>
-
-## setup the system
-
-1. Setup
- 
-    1. clone
-  
-            git clone https://github.com/akilesh96/audio_library_django_API.git
-    2. go into directory `cd audio_library_django_API`
-    3. Run `pip install -r requirements.txt`
-
-2. Django and database connection
-
-     Run following commands (For first time)
-     1. For creating python migration files, `python manage.py makemigrations`
-     2. Will create tables in DB, `python manage.py migrate`
-     3. To load default data, `python manage.py loaddata fixtures/data.json`
-
-3. Run the following command to run server
-    `python manage.py runserver 0:8080`
-<br>
-<br>
-# API end points
+## API end points
 
 ### 1. create
     url = http://0.0.0.0:8080/content/song/add
