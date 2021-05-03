@@ -41,14 +41,14 @@
     content-type = application/json
     
    - endpoints :
-        - song 
+        - Song 
                 
             request body
                 
                {
-                "name": "Jana Gana Mana",
-                "duration": 52
-                }
+                    "name": "Jana Gana Mana",
+                    "duration": 52
+               }
                 
             response body
 
@@ -59,7 +59,7 @@
                     "upload_time": "2021-05-03T11:34:28.695212Z"
                }
 
-        - podcast
+        - Podcast
             
             request body
             
@@ -81,7 +81,7 @@
                     "participants": "The Mountain Goats, John Carpenter"
                 }
                        
-        - audiobook
+        - Audiobook
         
             request body
             
@@ -108,6 +108,7 @@
     url = http://0.0.0.0:8080/content/<audioFileType>/<audioFileID> 
     method = PUT
     content-type = application/json
+
 - song
     
     - url : `http://0.0.0.0:8080/content/song/1`
@@ -136,22 +137,25 @@
 - audiobook
     - url : `http://0.0.0.0:8080/content/audiobook/1` - deletes record at id 1
 
-### 4. get
+### 4. get details
 
    1. song
            
             http://0.0.0.0:8080/content/song - returns all song details
             http://0.0.0.0:8080/content/song/1 - return song 1 details
+            method = GET
 
    2. podcast
            
             http://0.0.0.0:8080/content/podcast - returns all podcast details
             http://0.0.0.0:8080/content/podcast/1 - return podcast 1 details
+            method = GET
            
    3. audiobook
            
           http://0.0.0.0:8080/content/audiobook - returns all audiobook details
           http://0.0.0.0:8080/content/audiobook/1 - return audiobook 1 details
+          method = GET
     
     
 ### Return RESPONSE
