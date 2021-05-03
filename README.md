@@ -15,7 +15,7 @@
 ## API end points
 
 ### 1. create
-    url = http://0.0.0.0:8080/content/song/add
+    url = http://0.0.0.0:8080/content/<audioFileType>/add
     method = POST
     content-type = application/json
     
