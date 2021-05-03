@@ -9,6 +9,7 @@
 2. go into directory `cd audio_library_django_API`
 3. Run `pip install -r requirements.txt`
 4. Then run `python manage.py runserver 0:8080`
+5. Load `Postman Collections/Audio Library.postman_collection_v1.json` into POSTMAN application
 <br>
 <br>
 
