@@ -43,9 +43,7 @@ class Content(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         except:
-            return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-        return Response(status=status.HTTP_400_BAD_REQUEST)       
+            return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)  
 
     def delete(self, request, audiotype, pk):
         try:
@@ -83,10 +81,8 @@ class AddContent(APIView):
             if serializer_obj.is_valid():
                 serializer_obj.save()
                 return Response(serializer_obj.data, status=status.HTTP_200_OK)
-            else:
-                return Response(serializer_obj.errors, status=status.HTTP_400_BAD_REQUEST)
+
+            return Response(serializer_obj.errors, status=status.HTTP_400_BAD_REQUEST)
 
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-        return Response(status=status.HTTP_400_BAD_REQUEST) 
