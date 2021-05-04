@@ -16,7 +16,7 @@
 ## API end points
 
 ### 1. create
-    url = http://0.0.0.0:8080/content/<audioFileType>/add
+    url = http://0.0.0.0:8080/content/<audioType>/add
     method = POST
     content-type = application/json
     
@@ -85,7 +85,7 @@
                     
 ### 2. Update
 
-    url = http://0.0.0.0:8080/content/<audioFileType>/<audioFileID> 
+    url = http://0.0.0.0:8080/content/<audioType>/<id> 
     method = PUT
     content-type = application/json
 
@@ -106,7 +106,7 @@
 
 ### 3. delete
   
-    url = http://0.0.0.0:8080/content/<audioFileType>/<audioFileID>
+    url = http://0.0.0.0:8080/content/<audioType>/<id>
     method = DELETE
     
 - song
