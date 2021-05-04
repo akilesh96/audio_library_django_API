@@ -12,6 +12,7 @@
 5. Load `Postman_Collections/Audio Library.postman_collection_v1.json` into POSTMAN application
 <br>
 <br>
+
 ## API end points
 
 ### 1. create
@@ -107,7 +108,6 @@
   
     url = http://0.0.0.0:8080/content/<audioFileType>/<audioFileID>
     method = DELETE
-    content-type = application/json
     
 - song
     - url: `http://0.0.0.0:8080/content/song/1` - deletes record at id 1
