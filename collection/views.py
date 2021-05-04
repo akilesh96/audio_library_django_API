@@ -50,6 +50,7 @@ class Content(APIView):
     def delete(self, request, audiotype, pk):
         try:
             obj, _ = self.get_content_details(audiotype, pk)
+            obj.delete()
             return Response(status=status.HTTP_200_OK)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
