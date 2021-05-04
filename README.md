@@ -4,7 +4,7 @@
 
 1. clone
   
-            git clone https://github.com/akilesh96/audio_library_django_API.git
+        git clone https://github.com/akilesh96/audio_library_django_API.git
 
 2. go into directory `cd audio_library_django_API`
 3. Run `pip install -r requirements.txt`
